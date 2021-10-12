@@ -93,6 +93,43 @@ public class Demo implements CommandLineRunner {
 //Breakfast
         MainCategory breakfast = new MainCategory("Breakfast");
         categories.addCategory(breakfast);
+//Milk Sub Category
+        SubCategory milk = new SubCategory("Breakfast", "Milk");
+        breakfast.addSubCategory(milk);
+
+//Milk Products
+        Product fullFat = new Product("Breakfast", "Milk", "Full-fat", "Tam Yağlı içim süt", 5);
+        milk.addProduct(fullFat);
+
+        Product lowFat = new Product("Breakfast", "Milk", "Low-fat", "Az yağlı içim süt", 6 );
+        milk.addProduct(lowFat);
+
+        Product lactoFree = new Product("Breakfast", "Milk", "lacto-free", "laktozsuz içim süt", 7 );
+        milk.addProduct(lactoFree);
+
+//Delicatessen Sub Category
+        SubCategory delicatessen = new SubCategory("Breakfast", "Delicatessen");
+        breakfast.addSubCategory(delicatessen);
+
+//Delicatessen Products
+        Product cheddar = new Product("Breakfast", "Delicatessen", "Cheddar", "Çedar Peynir", 4);
+        delicatessen.addProduct(cheddar);
+
+        Product cheese = new Product("Breakfast", "Delicatessen", "Cheese", "Halis mulis Peynir", 4);
+        delicatessen.addProduct(cheese);
+
+        Product salami = new Product("Breakfast", "Delicatessen", "Salami", "Sadece Salam", 5);
+        delicatessen.addProduct(salami);
+
+        Product susage = new Product("Breakfast", "Delicatessen", "Susage", "Sosis", 6);
+        delicatessen.addProduct(susage);
+
+        Product olive = new Product("Breakfast", "Delicatessen", "Olive", "Zeytin", 7);
+        delicatessen.addProduct(olive);
+
+
+        
+
 
 
 /*test part
