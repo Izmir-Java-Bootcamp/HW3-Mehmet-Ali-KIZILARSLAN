@@ -41,7 +41,6 @@ public class Product extends SubCategory {
 
     @Override
     public String toString(){
-
         return "Name: " + name + " Description: " + description + " Price :" + price;
     }
 
