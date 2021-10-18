@@ -6,7 +6,6 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
 public class Cart {
     private final List<CartItem> cartItemList;
     public Cart(){
@@ -22,7 +21,7 @@ public class Cart {
     }
 
     public double getTotalPrice(){
-        return 0;
+        return cartItemList.stream().map(CartItem::getPrice).mapToDouble(value -> value).sum();
     }
 
 }
