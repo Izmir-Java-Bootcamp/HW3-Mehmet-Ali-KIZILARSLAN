@@ -4,10 +4,9 @@ package com.kodluyoruz.homework3.service;
 import com.kodluyoruz.homework3.cart.Cart;
 import com.kodluyoruz.homework3.checkout.Bill;
 import com.kodluyoruz.homework3.checkout.BillItem;
-import com.kodluyoruz.homework3.discount.DiscountStrategy;
+import com.kodluyoruz.homework3.service.discount.DiscountStrategy;
 import lombok.Builder;
 import lombok.Data;
-import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

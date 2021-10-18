@@ -7,4 +7,9 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties(prefix = "discount")
 public class DiscountProperty {
     private double discount;
+
+
+    public double getPercentage() {
+        return discount;
+    }
 }

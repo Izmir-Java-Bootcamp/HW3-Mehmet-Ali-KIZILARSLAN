@@ -1,4 +1,4 @@
-package com.kodluyoruz.homework3.discount;
+package com.kodluyoruz.homework3.service.discount;
 
 import com.kodluyoruz.homework3.cart.Cart;
 import com.kodluyoruz.homework3.cart.CartItem;
